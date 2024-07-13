@@ -1,10 +1,10 @@
 # auto-etcd
-a (poor) attempt at making a self-operating etcd cluster in docker swarm
+a (hopefully not too poor) attempt at making a self-operating etcd cluster in docker swarm
 
 # ATTRIBUTION
 https://github.com/YouMightNotNeedKubernetes/etcd
 Most code is taken from this repo, I'm just trying to bend etcd into not having to actively manage it.
-The organization has been recently archived and it's being migrate to https://github.com/swarmlibs .
+The organization has been recently archived and it's being migrated to https://github.com/swarmlibs .
 
 # WARNING(s)
 - still under initial development, started the repo to have an easier time testing it on play-with-docker
@@ -13,7 +13,7 @@ The organization has been recently archived and it's being migrate to https://gi
 
 # Goals of the project
 - single command startup
-- no commands to run against the etcd API to manage membership
+- no commands should be run manually against the etcd API to manage membership
 - should be a 1-to-1 mirror of which nodes are labeled to run the etcd cluster
 - resilient to node failure
 - shouldn't care on which nodes it is actually running
